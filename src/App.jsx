@@ -8,7 +8,6 @@ function App() {
     [howMany, setHowMany] = useState('How Many?'),
     [userData, setUserData] = useState([])
 
-
   const FetchUser = ({ Quantity }) => fetch(`https://randomuser.me/api/?results=${Quantity}`)
     .then(response => response.json())
     .then(Value => { setUserData(Value.results) })
@@ -24,7 +23,9 @@ function App() {
   }
 
   const DisplayUserData = ({ UserData }) => {
+
     const Users = []
+    
     UserData.map(User => {
       const
         name = User.name.first + ' ' + User.name.last,

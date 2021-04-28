@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const
+  const 
     [btnLabel, setBtnLabel] = useState('Load'),
     [rangeValue, setRangeValue] = useState(1),
     [howMany, setHowMany] = useState('How Many?'),
